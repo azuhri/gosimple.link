@@ -3,11 +3,12 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/gin-gonic/gin"
+	. "github.com/tbxark/g4vercel"
+	gee "github.com/tbxark/g4vercel"
 )
 
-func RootHandler(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{
+func RootHandler(c *gee.Context) {
+	c.JSON(http.StatusOK, H{
 		"status":  true,
 		"message": "success get data",
 	})

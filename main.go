@@ -2,8 +2,8 @@ package main
 
 import (
 	"log"
+	routes "simplelink/api"
 	"simplelink/initializers"
-	"simplelink/routes"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
@@ -34,6 +34,6 @@ func main() {
 	// Register the middleware
 	r.Use(cors.New(corsConfig))
 
-	routes.ApiRoute(r) // Parsing to api.go
+	routes.WebRoute(r) // Parsing to api.go
 	r.Run(":8080")     //r.Run(":5000") -> custom ports
 }
