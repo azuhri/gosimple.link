@@ -2,7 +2,7 @@ package routes
 
 import (
 	"simplelink/controllers"
-
+	"github.com/tbxark/g4vercel"
 	"github.com/gin-gonic/gin"
 )
 
